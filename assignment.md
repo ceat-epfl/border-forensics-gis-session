@@ -2,9 +2,9 @@
 
 In this session, we will evaluate the accessibility to services from asylum facilities in Switzerland and compare it to the [service accessibility of the general population according to the Swiss Federal Statistical Office (FSO)](https://www.bfs.admin.ch/bfs/fr/home/statistiques/themes-transversaux/analyses-spatiales/services-population/accessibilite.html). To that end, we provide the following data:
 
-* `bassins.gpkg`: a vector layer with the labour market areas (bassins d'emploi) of Switzerland [as defined by the FSO](https://www.bfs.admin.ch/bfs/en/home/statistics/catalogues-databases.assetdetail.8966775.html)
-* `asylum-facilities.gpkg`: locations of asylum facilities (cantonal and federal) in Switzerland
-* **amenities**: locations of amenities of three categories, each in a dedicated file: `amenities-pharmacies.gpkg`, `amenities-restaurants-cafes.gpkg` and `amenities-supermarkets.gpkg`.
+- `bassins.gpkg`: a vector layer with the labour market areas (bassins d'emploi) of Switzerland [as defined by the FSO](https://www.bfs.admin.ch/bfs/en/home/statistics/catalogues-databases.assetdetail.8966775.html)
+- `asylum-facilities.gpkg`: locations of asylum facilities (cantonal and federal) in Switzerland
+- **amenities**: locations of amenities of three categories, each in a dedicated file: `amenities-pharmacies.gpkg`, `amenities-restaurants-cafes.gpkg` and `amenities-supermarkets.gpkg`.
 
 The data can be downloaded in a zip file from [this link](https://drive.switch.ch/index.php/s/lDv37pouN1fIXmU).
 
@@ -30,7 +30,7 @@ We can improve the visualization of the distance layers by right-clicking on one
 
 ### Filtering labour market areas with no assylum facilities
 
-Before going any further, we will first filter out the labour market areas that do not contain any assylum facilities. To do so, we will use the `Extract by location` algorithm, which can be found in the `Vector selection` group of the `Processing toolbox`. The `Extract by location` algorithm will extract the features of the input layer that intersect with the features of the reference layer. We will set the `Extract features from` field to the `bassins` layer and the `By comparing to the features from` to the `assylum-facilities` layer. The remaining options can be left to the defaults. 
+Before going any further, we will first filter out the labour market areas that do not contain any assylum facilities. To do so, we will use the `Extract by location` algorithm, which can be found in the `Vector selection` group of the `Processing toolbox`. The `Extract by location` algorithm will extract the features of the input layer that intersect with the features of the reference layer. We will set the `Extract features from` field to the `bassins` layer and the `By comparing to the features from` to the `assylum-facilities` layer. The remaining options can be left to the defaults.
 
 It may be convenient to rename the resulting layer (e.g., to "bassins-with-facilities") and even deleting the original "bassins" layer.
 
