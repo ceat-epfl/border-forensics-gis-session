@@ -1,0 +1,7 @@
+channels:
+- conda-forge
+dependencies:
+- jupyterlab
+- osmnx
+- python=3.10
+name: border-forensics
